@@ -24,6 +24,7 @@ namespace Auramonitor
                     service.WaitForStatus(ServiceControllerStatus.Stopped);
                     service.Start();
                     service.WaitForStatus(ServiceControllerStatus.Running);
+                    Thread.Sleep(100000);
                 }
                 else
                 {
